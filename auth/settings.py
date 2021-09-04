@@ -51,6 +51,8 @@ CORS_ORIGIN_WHITELIST = [
 
 #AUTH_USER_MODEL = 'authentication.User'
 import os
+import django_heroku
+django_heroku.settings(locals())
 import random
 usr_otp = random.randint(10000000, 99999999999)
 
